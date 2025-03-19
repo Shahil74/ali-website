@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-page="63b7f29133958e8ae005cfdf" lang="en">
+<html data-wf-page="63b7f29133958e8ae005cfdf" data-wf-site="63b6ad58a2acb515e1682af0" lang="en">
 
 
 <head>
@@ -30,7 +30,7 @@
             n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
         }(window, document);
     </script>
-    <link href="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb52acb682b7e_Favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <!-- <link href="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb52acb682b7e_Favicon.png" rel="shortcut icon" type="image/x-icon" /> -->
     <link href="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb55ab1682b7f_Webclip.png" rel="apple-touch-icon" />
     <!-- <link href="https://www.ali-sons.com/" rel="canonical" /> -->
     
@@ -233,7 +233,7 @@
                         <div class="container-large">
                             <div class="ceo_message_component-wrapper">
                                 <div class="w-layout-grid ceo_message_component">
-                                    <div id="w-node-ceedc23b-5302-2a76-510c-eae2a4538409-e005cfdf" class="ceo_message_image-wrapper"><img src="<?= base_url('assets/images/ceo.jpg')?>" loading="lazy" alt="H.E.ALI BIN KHALFAN AL MUTAWA AL DHAHERI" height="531" width="457" da="" class="ceo_message_image"
+                                    <div id="w-node-ceedc23b-5302-2a76-510c-eae2a4538409-e005cfdf" class="ceo_message_image-wrapper"><img src="<?= base_url('assets/images/ceo.jpg')?>" loading="lazy" alt="CEO Image" height="531" width="457" da="" class="ceo_message_image"
                                         /></div>
                                     <div id="w-node-ceedc23b-5302-2a76-510c-eae2a453840b-e005cfdf" class="ceo_message_content">
                                         <div class="margin-bottom margin-small">
@@ -291,7 +291,7 @@
     srcset="<?= base_url('assets/images/slide1-500.jpg') ?> 500w, 
             <?= base_url('assets/images/slide1-800.jpg') ?> 800w, 
             <?= base_url('assets/images/slide1-1080.jpg') ?> 1080w, 
-            <?= base_url('assets/images/slide1-1600.jpg') ?> 1600w, 
+            <?= base_url('assets/images/slide1-1120.jpg') ?> 1120w, 
             <?= base_url('assets/images/slide1.jpg') ?> 2500w" 
     alt="First Carousel Image"
 /></div>
