@@ -1,0 +1,411 @@
+/* General Resets */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/background.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.6);
+}
+
+/* Logo and Growth Text */
+.logo, .growth-text {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 300;
+}
+
+.growth-text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* CEO Section */
+.ceo-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: white;
+    overflow: hidden;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.ceo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.ceo-container.fade-out {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.ceo-image {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Carousel Section */
+.carousel-section {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Smaller size */
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Carousel Items */
+.carousel-item {
+    display: none; /* Hide all images initially */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.carousel-item.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Carousel Images */
+.carousel-item img {
+    width: 80%; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 60vh; /* Prevent images from being too tall */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Carousel Caption */
+.carousel-caption h1 {
+    font-size: 32px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.progress-bar-container.visible {
+    opacity: 1;
+}
+
+.progress-bar {
+    width: 5px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out, height 0.3s ease;
+}
+
+.progress-bar.active {
+    background-color: #ff6600;
+    height: 100%;
+}
+
+/* Fix for Overlapping Buttons */
+.menu-button, .language-button {
+    position: fixed;
+    bottom: 20px;
+    z-index: 9999;
+}
+
+.menu-button {
+    left: 20px;
+}
+
+.language-button {
+    left: 140px;
+}
+
+.menu-button button,
+.language-button button {
+    background-color: grey;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.menu-button button:hover,
+.language-button button:hover {
+    background-color: black;
+}
+/* Key Facts Animation */
+.key-facts { 
+    position: absolute;
+    top: -270px; 
+    left: -100px; 
+    font-size: 30px;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.key-facts.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+    position: relative;
+    z-index: 1;
+}
+
+/* Portfolio Items */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.portfolio-container::-webkit-scrollbar {
+    display: none;
+}
+
+.portfolio-item {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+.enquiry-section {
+    background: #f4f4f4; /* Light background */
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+.enquiry-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.enquiry-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.enquiry-form input[type="email"] {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    width: 70%;
+    max-width: 500px;
+    margin-right: 10px;
+}
+
+.enquiry-form .submit-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.enquiry-form .submit-button i {
+    color: #333;
+}
+
+.enquiry-checkboxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap checkboxes on smaller screens */
+}
+
+.enquiry-checkboxes label {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.enquiry-checkboxes input[type="checkbox"] {
+    margin-right: 5px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .enquiry-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .enquiry-form input {
+        width: 100%;
+    }
+
+    .enquiry-checkboxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.site-footer {
+    background: #fff;
+    color: #333;
+    padding: 20px 0;
+    font-size: 14px;
+    clear: both;
+    position: relative;
+    z-index: 2;
+}
+
+.site-footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.site-footer .footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-bottom: 20px;
+}
+
+.site-footer .footer-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.site-footer .footer-lower {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center icons and copyright */
+    align-items: center; /* Vertically align items */
+}
+
+.site-footer .social-icons {
+    display: flex;
+    justify-content: center; /* Center icons */
+}
+
+.site-footer .social-icon {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.site-footer .social-icon:hover {
+    color: #007bff;
+}
