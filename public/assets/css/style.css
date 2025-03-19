@@ -1,411 +1,454 @@
-/* General Resets */
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
+.w-richtext> :not(div):first-child,
+                .w-richtext>div:first-child> :first-child {
+                    margin-top: 0 !important;
+                }
 
-/* Hero Section */
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url('../images/background.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
-    z-index: 0;
-}
+                /* Get rid of bottom margin on last element in any rich text element */
 
-.hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(50, 50, 50, 0.6);
-}
+                .w-richtext>:last-child,
+                .w-richtext ol li:last-child,
+                .w-richtext ul li:last-child {
+                    margin-bottom: 0 !important;
+                }
 
-/* Logo and Growth Text */
-.logo, .growth-text {
-    transition: transform 0.5s ease, opacity 0.5s ease;
-}
+                /* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
 
-.logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    z-index: 300;
+                /*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
 }
+*/
 
-.growth-text {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
+                /* Prevent all click and hover interaction with an element */
 
-/* CEO Section */
-.ceo-section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #121212;
-    color: white;
-    overflow: hidden;
-    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-}
+                .pointer-events-off {
+                    pointer-events: none;
+                }
 
-.ceo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
+                /* Enables all click and hover interaction with an element */
 
-.ceo-container.fade-out {
-    opacity: 0;
-    transform: translateY(-50px);
-}
+                .pointer-events-on {
+                    pointer-events: auto;
+                }
 
-.ceo-image {
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
+                /* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
 
-/* Carousel Section */
-.carousel-section {
-    position: relative;
-    width: 100%;
-    height: 70vh; /* Smaller size */
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
+                .div-square::after {
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                }
 
-/* Carousel Items */
-.carousel-item {
-    display: none; /* Hide all images initially */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
+                /*Hide focus outline for main content element*/
 
-.carousel-item.active {
-    display: block;
-    opacity: 1;
-}
+                main:focus-visible {
+                    outline: -webkit-focus-ring-color auto 0px;
+                }
 
-/* Carousel Images */
-.carousel-item img {
-    width: 80%; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 60vh; /* Prevent images from being too tall */
-    object-fit: cover;
-    display: block;
-    margin: 0 auto; /* Center the image */
-}
+                /* Make sure containers never lose their center alignment*/
 
-/* Carousel Caption */
-.carousel-caption h1 {
-    font-size: 32px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
+                .container-medium,
+                .container-small,
+                .container-large {
+                    margin-right: auto !important;
+                    margin-left: auto !important;
+                }
 
-/* Progress Bar */
-.progress-bar-container {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
+                /*Reset selects, buttons, and links styles*/
 
-.progress-bar-container.visible {
-    opacity: 1;
-}
+                .w-input,
+                .w-select,
+                a {
+                    color: inherit;
+                    text-decoration: inherit;
+                    /*font-size: inherit;*/
+                }
 
-.progress-bar {
-    width: 5px;
-    height: 50px;
-    background-color: #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: background-color 0.3s ease-in-out, height 0.3s ease;
-}
+                /*Apply "..." after 3 lines of text */
 
-.progress-bar.active {
-    background-color: #ff6600;
-    height: 100%;
-}
+                .text-style-3lines {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
 
-/* Fix for Overlapping Buttons */
-.menu-button, .language-button {
-    position: fixed;
-    bottom: 20px;
-    z-index: 9999;
-}
+                /* Apply "..." after 2 lines of text */
 
-.menu-button {
-    left: 20px;
-}
+                .text-style-2lines {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
 
-.language-button {
-    left: 140px;
-}
+                /* Apply "..." at 100% width */
 
-.menu-button button,
-.language-button button {
-    background-color: grey;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
+                .truncate-width {
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
 
-.menu-button button:hover,
-.language-button button:hover {
-    background-color: black;
-}
-/* Key Facts Animation */
-.key-facts { 
-    position: absolute;
-    top: -270px; 
-    left: -100px; 
-    font-size: 30px;
-    color: #ffffff; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
-    z-index: 9999;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
+                /* Removes native scrollbar */
 
-.key-facts.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+                .no-scrollbar {
+                    -ms-overflow-style: none; // IE 10+
+                    overflow: -moz-scrollbars-none; // Firefox
+                }
 
-/* Portfolio Section */
-.portfolio-section {
-    text-align: center;
-    padding: 50px 20px;
-    background: #f4f4f4;
-    position: relative;
-    z-index: 1;
-}
+                .no-scrollbar::-webkit-scrollbar {
+                    display: none; // Safari and Chrome
+                }
 
-/* Portfolio Items */
-.portfolio-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    white-space: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
+                /* Adds inline flex display */
 
-.portfolio-container::-webkit-scrollbar {
-    display: none;
-}
+                .display-inlineflex {
+                    display: inline-flex;
+                }
 
-.portfolio-item {
-    flex: 0 0 auto;
-    width: 400px;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-}
+                /* These classes are never overwritten */
 
-.portfolio-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
+                .hide {
+                    display: none !important;
+                }
 
-.portfolio-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
+                @media screen and (max-width: 991px),
+                @media screen and (max-width: 767px),
+                @media screen and (max-width: 479px) {
+                    .hide,
+                    .hide-tablet {
+                        display: none !important;
+                    }
+                }
 
-.portfolio-item:hover img {
-    transform: scale(1.1);
-}
+                @media screen and (max-width: 767px) .hide-mobile-landscape {
+                    display: none !important;
+                }
 
-.portfolio-item:hover .portfolio-overlay {
-    opacity: 1;
-}
-.enquiry-section {
-    background: #f4f4f4; /* Light background */
-    padding: 40px 20px;
-    text-align: center;
-    position: relative;
-    z-index: 1; /* Ensure it's above other elements */
-}
+                }
 
-.enquiry-container {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-}
+                @media screen and (max-width: 479px) .hide-mobile {
+                    display: none !important;
+                }
 
-.enquiry-form {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
+                }
 
-.enquiry-form input[type="email"] {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    width: 70%;
-    max-width: 500px;
-    margin-right: 10px;
-}
+                .margin-0 {
+                    margin: 0rem !important;
+                }
 
-.enquiry-form .submit-button {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+                .padding-0 {
+                    padding: 0rem !important;
+                }
 
-.enquiry-form .submit-button i {
-    color: #333;
-}
+                .spacing-clean {
+                    padding: 0rem !important;
+                    margin: 0rem !important;
+                }
 
-.enquiry-checkboxes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Wrap checkboxes on smaller screens */
-}
+                .margin-top {
+                    margin-right: 0rem !important;
+                    margin-bottom: 0rem !important;
+                    margin-left: 0rem !important;
+                }
 
-.enquiry-checkboxes label {
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
+                .padding-top {
+                    padding-right: 0rem !important;
+                    padding-bottom: 0rem !important;
+                    padding-left: 0rem !important;
+                }
 
-.enquiry-checkboxes input[type="checkbox"] {
-    margin-right: 5px;
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-    .enquiry-form {
-        flex-direction: column;
-        gap: 10px;
-    }
+                .margin-right {
+                    margin-top: 0rem !important;
+                    margin-bottom: 0rem !important;
+                    margin-left: 0rem !important;
+                }
 
-    .enquiry-form input {
-        width: 100%;
-    }
+                .padding-right {
+                    padding-top: 0rem !important;
+                    padding-bottom: 0rem !important;
+                    padding-left: 0rem !important;
+                }
 
-    .enquiry-checkboxes {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+                .margin-bottom {
+                    margin-top: 0rem !important;
+                    margin-right: 0rem !important;
+                    margin-left: 0rem !important;
+                }
 
+                .padding-bottom {
+                    padding-top: 0rem !important;
+                    padding-right: 0rem !important;
+                    padding-left: 0rem !important;
+                }
 
-.site-footer {
-    background: #fff;
-    color: #333;
-    padding: 20px 0;
-    font-size: 14px;
-    clear: both;
-    position: relative;
-    z-index: 2;
-}
+                .margin-left {
+                    margin-top: 0rem !important;
+                    margin-right: 0rem !important;
+                    margin-bottom: 0rem !important;
+                }
 
-.site-footer .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+                .padding-left {
+                    padding-top: 0rem !important;
+                    padding-right: 0rem !important;
+                    padding-bottom: 0rem !important;
+                }
 
-.site-footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-}
+                .margin-horizontal {
+                    margin-top: 0rem !important;
+                    margin-bottom: 0rem !important;
+                }
 
-.site-footer .footer-bottom {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Center the buttons */
-    margin-bottom: 20px;
-}
+                .padding-horizontal {
+                    padding-top: 0rem !important;
+                    padding-bottom: 0rem !important;
+                }
 
-.site-footer .footer-buttons {
-    display: flex;
-    align-items: center;
-}
+                .margin-vertical {
+                    margin-right: 0rem !important;
+                    margin-left: 0rem !important;
+                }
 
-.site-footer .footer-lower {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Center icons and copyright */
-    align-items: center; /* Vertically align items */
-}
+                .padding-vertical {
+                    padding-right: 0rem !important;
+                    padding-left: 0rem !important;
+                }
 
-.site-footer .social-icons {
-    display: flex;
-    justify-content: center; /* Center icons */
-}
+                /* --------Custom CSS----------*/
 
-.site-footer .social-icon {
-    margin: 0 10px;
-    font-size: 18px;
-    color: #333;
-    transition: color 0.3s ease;
-}
+                * {
+                    outline: none;
+                }
 
-.site-footer .social-icon:hover {
-    color: #007bff;
-}
+                body.ar {
+                    direction: rtl;
+                }
+
+                select {
+                    appearance: none;
+                    -webkit-appearance: none;
+                }
+
+                textarea {
+                    resize: vertical;
+                }
+
+                .ltr {
+                    direction: ltr;
+                }
+
+                .rtl {
+                    direction: rtl;
+                }
+
+                .enquiry-dropdown_dropdown-link .text-size-small.email {
+                    text-overflow: ellipsis;
+                }
+
+                .headroom {
+                    will-change: transform;
+                    transition: transform 400ms ease;
+                }
+
+                .headroom--pinned {
+                    transform: translateY(0%);
+                    -webkit-transform: translateY(0%);
+                }
+
+                .headroom--pinned:not(.headroom--top) .logo_container {
+                    backdrop-filter: blur(32px);
+                    -webkit-backdrop-filter: blur(32px);
+                }
+
+                .headroom--unpinned {
+                    transform: translateY(-150%);
+                    -webkit-transform: translateY(-150%);
+                }
+
+                /* Logo */
+
+                .logo-link:hover .logo-icon {
+                    color: #009639;
+                }
+
+                .logo-link:hover .logo-text {
+                    color: #000;
+                }
+
+                .logo-link.dark .logo-icon {
+                    color: #009639;
+                }
+
+                .logo-link.dark:hover .logo-icon {
+                    color: #000;
+                }
+
+                .logo-link.dark:hover .logo-text {
+                    color: #000;
+                }
+
+                /*Nav Menu*/
+
+                .nav_menu-label {
+                    text-overflow: ellipsis;
+                }
+
+                .nav_wrapper.invert-colors .nav_menu-button:not(.w--open) .button-menu {
+                    background: #101920;
+                    color: #FFF;
+                }
+
+                .nav_wrapper.invert-colors .nav_menu-button:not(.w--open) .nav_menu-label {
+                    color: #FFF;
+                }
+
+                .nav_wrapper.invert-colors .nav_menu-button:not(.w--open) .menu-icon_line-top,
+                .nav_wrapper.invert-colors .nav_menu-button:not(.w--open) .menu-icon_line-middle,
+                .nav_wrapper.invert-colors .nav_menu-button:not(.w--open) .menu-icon_line-bottom,
+                .nav_wrapper.invert-colors .nav_menu-button:not(.w--open) .menu-icon_line-middle-base {
+                    background-color: #FFF;
+                }
+
+                .nav_wrapper.invert-colors .enquiry-dropdown_dropdown-toggle {
+                    background-color: #f4f4f4;
+                    color: #000;
+                }
+
+                .enquiry-language_wrapper.show-lang-switch .enquiry-dropdown_dropdown-list {
+                    display: none !important;
+                }
+
+                .enquiry-language_wrapper.show-lang-switch .enquiry-dropdown_dropdown-toggle-label.lang {
+                    display: block;
+                }
+
+                .enquiry-language_wrapper.show-lang-switch .enquiry-dropdown_dropdown-toggle-label.enquiry {
+                    display: none;
+                }
+
+                .enquiry-language_wrapper.show-lang-switch .enquiry-dropdown_dropdown-toggle {
+                    opacity: 1 !important;
+                }
+
+                /*Newsletter*/
+
+                .sending .cta_newsletter_waiting_notice {
+                    display: flex;
+                }
+
+                .cta_newsletter_form_button:disabled {
+                    opacity: 0.2;
+                }
+
+                .cta_newsletter_form_button:disabled:hover {
+                    background-image: url('https://assets.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb55634682ba2_newsletter-submit-black.svg');
+                }
+
+                .verticals_accordion.active .vertical_icon {
+                    opacity: 0;
+                    transform: translate3d(-500px, 0, 0);
+                }
+
+                .verticals_accordion.active .vertical_heading {
+                    opacity: 1;
+                    transform: translate3d(0, 0, 0);
+                }
+
+                .two-slides .verticals_accordion:not(.active) {
+                    width: 15%;
+                }
+
+                @media screen and (max-width: 991px) {
+                    .verticals_accordion.active .vertical_icon {
+                        transform: translate3d(0, 100px, 0);
+                    }
+                    .verticals_accordion.active .vertical_heading {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    .two-slides .verticals_accordion,
+                    .two-slides .verticals_accordion:not(.active) {
+                        width: 100%;
+                    }
+                    .nav_wrapper .enquiry-language_wrapper {
+                        margin-left: auto;
+                    }
+                }
+
+                @media screen and (max-width: 767px) {
+                    .logo-link.dark {
+                        width: 65px;
+                    }
+                    .cta_newsletter_checkboxes {
+                        display: inline-flex;
+                    }
+                }
+
+                /* Landscape */
+
+                @media only screen and (min-device-width: 375px) and (max-device-width: 992px) and (orientation: landscape) {
+                    .nav_wrapper .nav_menu.shadow-large {
+                        width: 500px;
+                    }
+                    .nav_wrapper .nav_menu-wrapper {
+                        display: block;
+                        height: 400px;
+                        overflow: scroll;
+                        padding-top: 50px;
+                    }
+                    .nav_wrapper .nav_primary_links {
+                        display: inline-block;
+                        width: 55%;
+                    }
+                    .nav_wrapper .nav_secondary_links {
+                        display: inline-block;
+                        width: 40%;
+                    }
+                    .nav_wrapper .nav_top {
+                        margin-bottom: 1rem;
+                    }
+                    .nav_wrapper .nav_primary_link {
+                        padding: 0.65rem 0;
+                    }
+                    .nav_wrapper .nav_bottom_link {
+                        padding: 0 20px 0 0;
+                        position: absolute;
+                        bottom: -6px;
+                    }
+                    .contact .header-contact-details {
+                        padding-top: 14rem;
+                        padding-bottom: 1rem;
+                    }
+                }
+
+                /* Arabic */
+
+                body.ar {
+                    font-family: 'Clashdisplay', 'Almarai', sans-serif;
+                }
+
+                body.ar * {
+                    letter-spacing: 0px !important;
+                }
+
+                body.ar .enquiry-dropdown_dropdown-link-list {
+                    direction: ltr;
+                }
+
+                body.ar .heading-style-h2 {
+                    line-height: 1.5;
+                }

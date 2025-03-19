@@ -1,0 +1,91 @@
+CRITICAL - 2025-03-19 10:22:30 --> ErrorException: fwrite(): Write of 76 bytes failed with errno=22 Invalid argument
+[Method: CLI, Route: serve]
+in SYSTEMPATH\CLI\InputOutput.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write of 76 bytes failed with errno=22 Invalid argument', 'C:\\xampp\\htdocs\\home\\system\\CLI\\InputOutput.php', 78)
+ 2 SYSTEMPATH\CLI\InputOutput.php(78): fwrite(resource (stream), '[0;32mCodeIgniter development server started on http://localhost:8082[0m
+')
+ 3 SYSTEMPATH\CLI\CLI.php(1126): CodeIgniter\CLI\InputOutput->fwrite(resource (stream), '[0;32mCodeIgniter development server started on http://localhost:8082[0m
+')
+ 4 SYSTEMPATH\CLI\CLI.php(469): CodeIgniter\CLI\CLI::fwrite(resource (stream), '[0;32mCodeIgniter development server started on http://localhost:8082[0m
+')
+ 5 SYSTEMPATH\Commands\Server\Serve.php(99): CodeIgniter\CLI\CLI::write('[0;32mCodeIgniter development server started on http://localhost:8082[0m', 'green')
+ 6 SYSTEMPATH\Commands\Server\Serve.php(116): CodeIgniter\Commands\Server\Serve->run([])
+ 7 SYSTEMPATH\Commands\Server\Serve.php(116): CodeIgniter\Commands\Server\Serve->run([])
+ 8 SYSTEMPATH\CLI\Commands.php(70): CodeIgniter\Commands\Server\Serve->run([])
+ 9 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('serve', [])
+10 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+11 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+12 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-03-19 10:22:31 --> ErrorException: Uncaught ErrorException: fwrite(): Write of 34 bytes failed with errno=22 Invalid argument in C:\xampp\htdocs\home\system\CLI\InputOutput.php:78
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write...', 'C:\\xampp\\htdocs...', 78)
+#1 C:\xampp\htdocs\home\system\CLI\InputOutput.php(78): fwrite(Resource id #2, '\e[0;37m\e[41m[Er...')
+#2 C:\xampp\htdocs\home\system\CLI\CLI.php(1126): CodeIgniter\CLI\InputOutput->fwrite(Resource id #2, '\e[0;37m\e[41m[Er...')
+#3 C:\xampp\htdocs\home\system\CLI\CLI.php(469): CodeIgniter\CLI\CLI::fwrite(Resource id #2, '\e[0;37m\e[41m[Er...')
+#4 C:\xampp\htdocs\home\app\Views\errors\cli\error_exception.php(6): CodeIgniter\CLI\CLI::write('\e[0;37m\e[41m[Er...', 'light_gray', 'red')
+#5 C:\xampp\htdocs\home\system\Debug\BaseExceptionHandler.php(266): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\home\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#7 C:\xampp\htdocs\home\system\Debug\ExceptionHandler.php(116): CodeIgniter\Debug\BaseExceptionHandler->render(Object(ErrorException), 500, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\home\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle(Object(ErrorException), Object(CodeIgniter\HTTP\CLIRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#10 {main}
+  thrown
+【Previous Exception】
+ErrorException
+fwrite(): Write of 76 bytes failed with errno=22 Invalid argument
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write...', 'C:\\xampp\\htdocs...', 78)
+#1 C:\xampp\htdocs\home\system\CLI\InputOutput.php(78): fwrite(Resource id #2, '\e[0;32mCodeIgni...')
+#2 C:\xampp\htdocs\home\system\CLI\CLI.php(1126): CodeIgniter\CLI\InputOutput->fwrite(Resource id #2, '\e[0;32mCodeIgni...')
+#3 C:\xampp\htdocs\home\system\CLI\CLI.php(469): CodeIgniter\CLI\CLI::fwrite(Resource id #2, '\e[0;32mCodeIgni...')
+#4 C:\xampp\htdocs\home\system\Commands\Server\Serve.php(99): CodeIgniter\CLI\CLI::write('\e[0;32mCodeIgni...', 'green')
+#5 C:\xampp\htdocs\home\system\Commands\Server\Serve.php(116): CodeIgniter\Commands\Server\Serve->run(Array)
+#6 C:\xampp\htdocs\home\system\Commands\Server\Serve.php(116): CodeIgniter\Commands\Server\Serve->run(Array)
+#7 C:\xampp\htdocs\home\system\CLI\Commands.php(70): CodeIgniter\Commands\Server\Serve->run(Array)
+#8 C:\xampp\htdocs\home\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('serve', Array)
+#9 C:\xampp\htdocs\home\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\xampp\htdocs\home\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\xampp\htdocs\home\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+[Method: CLI, Route: serve]
+in SYSTEMPATH\CLI\InputOutput.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 11:29:55 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: %3C]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 11:31:59 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: %3C]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 11:32:28 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: %3C]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 11:32:43 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: %3C]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
