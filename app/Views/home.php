@@ -5,11 +5,6 @@
 <head>
     <meta charset="utf-8" />
     <title>Website</title>
-    <!-- <meta content="https://cdn.prod.website-files.com/636cf9c47a176e6f4c2af4e2/636d18ae2a2ccf6618fdcf29_OG-Ali-Sons.jpg" property="og:image" > -->
-    <!-- <meta content="https://cdn.prod.website-files.com/636cf9c47a176e6f4c2af4e2/636d18ae2a2ccf6618fdcf29_OG-Ali-Sons.jpg" property="twitter:image" /> -->
-    <!-- <meta property="og:type" content="website" /> -->
-    <!-- <meta content="summary_large_image" name="twitter:card" /> -->
-    <!-- <meta content="width=device-width, initial-scale=1" name="viewport" />  -->
     <link href="<?=base_url('assets/css/ali-sons.caf9ced18.min.css')?>" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -30,8 +25,8 @@
             n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
         }(window, document);
     </script>
-    <!-- <link href="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb52acb682b7e_Favicon.png" rel="shortcut icon" type="image/x-icon" /> -->
-    <link href="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb55ab1682b7f_Webclip.png" rel="apple-touch-icon" />
+    <!-- <link href="#" rel="shortcut icon" type="image/x-icon" /> -->
+    <link href="#" rel="apple-touch-icon" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 
@@ -153,7 +148,7 @@
                                 <nav class="enquiry-dropdown_dropdown-list shadow-large w-dropdown-list">
                                     <div class="enquiry-dropdown_dropdown-link-list">
                                         <a id="w-node-e7b9ddbc-e097-1767-adfa-543215dcc12d-d9549e78" href="#" class="enquiry-dropdown_dropdown-link hide w-inline-block">
-                                            <div class="enquiry-dropdown_icon-wrapper"><img src="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb53259682b82_whatsapp.svg" loading="lazy" alt="Whatsapp" class="icon-height-xsmall" /></div>
+                                            <div class="enquiry-dropdown_icon-wrapper"><img src="#" loading="lazy" alt="Whatsapp" class="icon-height-xsmall" /></div>
                                             <div class="enquiry-dropdown_text-wrapper">
                                                 <p class="text-size-small">+971 (0)5- 123 4567</p>
                                             </div>
@@ -161,13 +156,13 @@
                                         <a id="w-node-e7b9ddbc-e097-1767-adfa-543215dcc135-d9549e78" href="#" class="enquiry-dropdown_dropdown-link w-inline-block">
                                             <div class="enquiry-dropdown_icon-wrapper"><img src="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb56c5e682be1_phone_ico_outline.svg" loading="lazy" alt="Phone" class="icon-height-xsmall" /></div>
                                             <div class="enquiry-dropdown_text-wrapper">
-                                                <p class="text-size-small">+971 2 672 3900</p>
+                                                <p class="text-size-small">phone-number</p>
                                             </div>
                                         </a>
                                         <a href="#" class="enquiry-dropdown_dropdown-link w-inline-block">
                                             <div class="enquiry-dropdown_icon-wrapper"><img src="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb505c6682b9d_email.svg" loading="lazy" alt="Email" class="icon-height-xsmall" /></div>
                                             <div class="enquiry-dropdown_text-wrapper">
-                                                <p class="text-size-small email">alisonsgroup@ali-sons.com</p>
+                                                <p class="text-size-small email">your-email</p>
                                             </div>
                                         </a>
                                     </div>
@@ -215,9 +210,6 @@
             <?= base_url('assets/images/back-1080.jpg') ?> 1080w, 
             <?= base_url('assets/images/back-1600.jpg') ?> 1600w, 
             <?= base_url('assets/images/back-2000.jpg') ?> 2000w" 
-    alt="ASH Header"
-/>
-
                         alt="44 years of growth" class="header7_background-video" />
                     <div class="header7_list-wrapper w-dyn-list">
                         <div role="list" class="header7_collection-list w-dyn-items">
@@ -232,8 +224,7 @@
                         <div class="container-large">
                             <div class="ceo_message_component-wrapper">
                                 <div class="w-layout-grid ceo_message_component">
-                                    <div id="w-node-ceedc23b-5302-2a76-510c-eae2a4538409-e005cfdf" class="ceo_message_image-wrapper"><img src="<?= base_url('assets/images/ceo.jpg')?>" loading="lazy" alt="CEO Image" height="531" width="457" da="" class="ceo_message_image"
-                                        /></div>
+                                    <div id="w-node-ceedc23b-5302-2a76-510c-eae2a4538409-e005cfdf" class="ceo_message_image-wrapper"><img src="<?= base_url('assets/images/ceo.jpg')?>" loading="lazy" alt="CEO Image" height="531" width="457" da="" class="ceo_message_image"/></div>
                                     <div id="w-node-ceedc23b-5302-2a76-510c-eae2a453840b-e005cfdf" class="ceo_message_content">
                                         <div class="margin-bottom margin-small">
                                             <h2 class="ceo_message_heading">Message from our CEO</h2>
@@ -242,7 +233,7 @@
                                             <div class="heading-style-h6-v2">Our success is tied to the development of our country</div>
                                         </div>
                                         <p class="text-size-medium"><br/>‍The world we live in is constantly changing. The industries and technologies around us are evolving at breakneck speed, giving companies new demands to meet, challenges to overcome, and ever-higher expectations
-                                            to meet and exceed. At Ali &amp; Sons, we see this as an opportunity.</p>
+                                            to meet and exceed. we see this as an opportunity.</p>
                                         <div class="ceo_message_detail">
                                             <p class="text-size-medium">‍<br/>We strive to build on our existing legacy of excellence, innovation, and success — driving businesses forward, delivering the highest quality of products and services to our customers and ensuring our
                                                 valued employees are always well cared for.<br/><br/>Above all, we believe in the power of people. Our focus is always on empowering and investing in our valuable human resources and building a strong and
@@ -292,8 +283,7 @@
             <?= base_url('assets/images/slide1-1080.jpg') ?> 1080w, 
             <?= base_url('assets/images/slide1-1120.jpg') ?> 1120w, 
             <?= base_url('assets/images/slide1.jpg') ?> 2500w" 
-    alt="First Carousel Image"
-/></div>
+    alt="First Carousel Image" class="facts_background-image" /></div>
                                 </div>
                                 <div class="section_facts">
                                     <div class="padding-global">
@@ -317,7 +307,7 @@
             <?= base_url('assets/images/slide2-1080.jpg') ?> 1080w, 
             <?= base_url('assets/images/slide2-1600.jpg') ?> 1600w, 
             <?= base_url('assets/images/slide2.jpg') ?> 2500w" 
-    alt="Carousel 2 Image"
+    alt="Carousel 2 Image" class="facts_background-image"
 /></div>
                                 </div>
                                 <div class="section_facts">
@@ -342,7 +332,7 @@
             <?= base_url('assets/images/slide3-1080.jpg') ?> 1080w, 
             <?= base_url('assets/images/slide3-1600.jpg') ?> 1600w, 
             <?= base_url('assets/images/slide3.jpg') ?> 2500w" 
-    alt="Carousel 3 Images"
+    alt="Carousel 3 Images" class="facts_background-image"
 /></div>
                                 </div>
                                 <div class="facts-sections-bullets">
@@ -526,7 +516,7 @@
             </div>
         </div>
     </div>
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63b6ad58a2acb515e1682af0" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="<?=base_url('assets/js/jquery-3.5.1.min.dc5e7f18c8.js')?>" type="text/javascript"></script>
     <script src="<?= base_url('assets/js/ali-sons.schunk.4a394eb5af8156f2.js')?>" type="text/javascript"></script>
     <script src="<?= base_url('assets/js/ali-sons.schunk.ab45be6a4a7b2817.js')?>" type="text/javascript"></script>
     <script src="<?= base_url('assets/js/ali-sons.15548e85.4b771c2f531e4fe4.js')?>" type="text/javascript"></script>

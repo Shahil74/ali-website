@@ -372,9 +372,9 @@
 
 
         var link = '';
-        var homeLinks = ['/', '/ar/home'];
+        var homeLinks = ['/', '#'];
         if (homeLinks.includes(window.location.pathname)) {
-            link = '/ar/home';
+            link = '#';
             if ($('body').hasClass('ar')) {
                 link = '/';
             }
