@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="33px" viewBox="0 0 36 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>RealEstate - Ico</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RealEstate---Ico" fill="#FFFFFF">
+            <g id="Group-30">
+                <path d="M16.2068966,0 C17.8637508,0 19.2068966,1.34314575 19.2068966,3 L19.2068966,30 C19.2068966,31.6568542 17.8637508,33 16.2068966,33 L3,33 C1.34314575,33 0,31.6568542 0,30 L0,3 C0,1.34314575 1.34314575,0 3,0 L16.2068966,0 Z M16.2068966,1.5 L3,1.5 C2.17157288,1.5 1.5,2.17157288 1.5,3 L1.5,30 C1.5,30.8284271 2.17157288,31.5 3,31.5 L16.2068966,31.5 C17.0353237,31.5 17.7068966,30.8284271 17.7068966,30 L17.7068966,3 C17.7068966,2.17157288 17.0353237,1.5 16.2068966,1.5 Z" id="Rectangle-4" fill-rule="nonzero"></path>
+                <g id="Group-33" transform="translate(4.275862, 4.551724)">
+                    <rect id="Rectangle" x="0" y="0" width="4.63702359" height="4.63702359" rx="1"></rect>
+                    <rect id="Rectangle" x="6.49183303" y="0" width="4.63702359" height="4.63702359" rx="1"></rect>
+                    <rect id="Rectangle" x="0" y="6.48702359" width="4.63702359" height="4.63702359" rx="1"></rect>
+                    <rect id="Rectangle" x="6.49183303" y="6.48702359" width="4.63702359" height="4.63702359" rx="1"></rect>
+                    <rect id="Rectangle" x="0" y="12.9740472" width="4.63702359" height="4.63702359" rx="1"></rect>
+                    <rect id="Rectangle" x="6.49183303" y="12.9740472" width="4.63702359" height="4.63702359" rx="1"></rect>
+                    <rect id="Rectangle" x="0" y="18.9740472" width="4.63702359" height="4.63702359" rx="1"></rect>
+                    <rect id="Rectangle" x="6.49183303" y="18.9740472" width="4.63702359" height="4.63702359" rx="1"></rect>
+                </g>
+            </g>
+            <g id="Group-30" transform="translate(22.000000, 17.000000)">
+                <path d="M10.3866249,0 C12.0434791,0 13.3866249,1.34314575 13.3866249,3 L13.3866249,13 C13.3866249,14.6568542 12.0434791,16 10.3866249,16 L3,16 C1.34314575,16 0,14.6568542 0,13 L0,3 C0,1.34314575 1.34314575,0 3,0 L10.3866249,0 Z M10.3866249,1.5 L3,1.5 C2.17157288,1.5 1.5,2.17157288 1.5,3 L1.5,13 C1.5,13.8284271 2.17157288,14.5 3,14.5 L10.3866249,14.5 C11.215052,14.5 11.8866249,13.8284271 11.8866249,13 L11.8866249,3 C11.8866249,2.17157288 11.215052,1.5 10.3866249,1.5 Z" id="Rectangle-4" fill-rule="nonzero"></path>
+                <g id="Group-33" transform="translate(2.980146, 4.172414)">
+                    <rect id="Rectangle" x="0" y="0" width="3.07868003" height="3.07868003" rx="1"></rect>
+                    <rect id="Rectangle" x="4.31015205" y="0" width="3.07868003" height="3.07868003" rx="1"></rect>
+                    <rect id="Rectangle" x="0" y="4.3069589" width="3.07868003" height="3.07868003" rx="1"></rect>
+                    <rect id="Rectangle" x="4.31015205" y="4.3069589" width="3.07868003" height="3.07868003" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

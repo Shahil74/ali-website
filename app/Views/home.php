@@ -116,17 +116,27 @@
                         <div class="nav_menu-wrapper">
                             <div class="nav_top"><a href="/" aria-current="page" class="nav_logo_link w-inline-block w--current"><img src= "<?= base_url('assets/images/logo.png')?> " loading="lazy" alt="Ali &amp; Sons logo" class="nav-logo"/></a>
                                 <a
-                                    href="/" aria-current="page" class="nav_home-link w-inline-block w--current"><img src="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb572d4682ba7_home.svg" loading="lazy" width="20" height="20" alt="Home Icon" class="nav_home-icon" /></a>
+                                    href="/" aria-current="page" class="nav_home-link w-inline-block w--current"><i class="fas fa-home"></i> </a>
                             </div>
                             <div class="nav_primary_links">
                                 <div class="nav_links-wrapper">
                                     <div class="collection-list-wrapper w-dyn-list">
                                         <div role="list" class="collection-list w-dyn-items">
-                                            <div role="listitem" class="nav_primary_link_hover w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e37e68b9ea270925f6d1bc_img-automotive.jpeg" alt="Automotive" sizes="100vw" srcset="https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e37e68b9ea270925f6d1bc_img-automotive-p-500.jpeg 500w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e37e68b9ea270925f6d1bc_img-automotive-p-800.jpeg 800w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e37e68b9ea270925f6d1bc_img-automotive-p-1080.jpeg 1080w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e37e68b9ea270925f6d1bc_img-automotive.jpeg 1120w"
-                                                    class="nav_primary_link_hover_img automotive show" /><img loading="lazy" src="https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/643921b770670085ef58ce84_EandI-opac.png" alt="Energy &amp; Industrial"
-                                                    sizes="100vw" srcset="https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/643921b770670085ef58ce84_EandI-opac-p-500.png 500w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/643921b770670085ef58ce84_EandI-opac-p-800.png 800w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/643921b770670085ef58ce84_EandI-opac-p-1080.png 1080w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/643921b770670085ef58ce84_EandI-opac.png 1120w"
-                                                    class="nav_primary_link_hover_img" /><img loading="lazy" width="Auto" src="https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e382134794ef87b6896ca2_slide-real-estate.jpeg" alt="Real Estate, Retail, Investment &amp; Others"
-                                                    sizes="100vw" srcset="https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e382134794ef87b6896ca2_slide-real-estate-p-500.jpeg 500w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e382134794ef87b6896ca2_slide-real-estate-p-800.jpeg 800w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e382134794ef87b6896ca2_slide-real-estate-p-1080.jpeg 1080w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e382134794ef87b6896ca2_slide-real-estate.jpeg 1120w"
+                                            <div role="listitem" class="nav_primary_link_hover w-dyn-item"><img loading="lazy" src="<?=base_url('assets/images/portfolio2.jpg')?>" alt="Automotive" sizes="100vw" 
+                                            srcset="<?=base_url('assets/images/portfolio2-500.jpg')?> 500w, 
+                                                <?=base_url('assets/images/portfolio2-800.jpg')?> 800w, 
+                                                <?=base_url('assets/images/portfolio2-1080.jpg')?> 1080w, 
+                                                <?=base_url('assets/images/portfolio2-1120.jpg')?> 1120w" 
+                                                    class="nav_primary_link_hover_img automotive show" /><img loading="lazy" src="<?= base_url('assets/images/portfolio1.jpg')?>" alt="Energy &amp; Industrial"
+                                                    sizes="100vw" srcset="<?=base_url('assets/images/portfolio1-500.jpg')?> 500w, 
+                                                <?=base_url('assets/images/portfolio1-800.jpg')?> 800w, 
+                                                <?=base_url('assets/images/portfolio1-1080.jpg')?> 1080w, 
+                                                <?=base_url('assets/images/portfolio1-1120.jpg')?> 1120w" 
+                                                    class="nav_primary_link_hover_img" /><img loading="lazy" width="Auto" src="<?= base_url('asssets/images/portfolio3.jpg')?>" alt="Real Estate, Retail, Investment &amp; Others"
+                                                    sizes="100vw" srcset="<?=base_url('assets/images/portfolio3-500.jpg')?> 500w, 
+                                                <?=base_url('assets/images/portfolio3-800.jpg')?> 800w, 
+                                                <?=base_url('assets/images/portfolio3-1080.jpg')?> 1080w, 
+                                                <?=base_url('assets/images/portfolio3-1120.jpg')?> 1120w" 
                                                     class="nav_primary_link_hover_img" /></div>
                                         </div>
                                     </div><a href="#" class="nav_primary_link w-nav-link">Automotive</a><a href="#" class="nav_primary_link w-nav-link">Energy &amp; Industrial</a><a href="#"
@@ -150,17 +160,17 @@
                                         <a id="w-node-e7b9ddbc-e097-1767-adfa-543215dcc12d-d9549e78" href="#" class="enquiry-dropdown_dropdown-link hide w-inline-block">
                                             <div class="enquiry-dropdown_icon-wrapper"><img src="#" loading="lazy" alt="Whatsapp" class="icon-height-xsmall" /></div>
                                             <div class="enquiry-dropdown_text-wrapper">
-                                                <p class="text-size-small">+971 (0)5- 123 4567</p>
+                                                <p class="text-size-small">phone-number</p>
                                             </div>
                                         </a>
                                         <a id="w-node-e7b9ddbc-e097-1767-adfa-543215dcc135-d9549e78" href="#" class="enquiry-dropdown_dropdown-link w-inline-block">
-                                            <div class="enquiry-dropdown_icon-wrapper"><img src="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb56c5e682be1_phone_ico_outline.svg" loading="lazy" alt="Phone" class="icon-height-xsmall" /></div>
+                                            <div class="enquiry-dropdown_icon-wrapper"><i class="fas fa-phone"></i></div>
                                             <div class="enquiry-dropdown_text-wrapper">
                                                 <p class="text-size-small">phone-number</p>
                                             </div>
                                         </a>
                                         <a href="#" class="enquiry-dropdown_dropdown-link w-inline-block">
-                                            <div class="enquiry-dropdown_icon-wrapper"><img src="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb505c6682b9d_email.svg" loading="lazy" alt="Email" class="icon-height-xsmall" /></div>
+                                            <div class="enquiry-dropdown_icon-wrapper"><i class="fas fa-envelope"></i></div>
                                             <div class="enquiry-dropdown_text-wrapper">
                                                 <p class="text-size-small email">your-email</p>
                                             </div>
@@ -200,9 +210,9 @@
                 </div>
                 <div data-w-id="c2feddca-ec7a-880c-cef7-d7023b685374" style="opacity:0" class="header7_background-video-wrapper">
                     <div class="video-overlay-layer"></div>
-                    <div data-poster-url="https://cdn.prod.website-files.com/636cf9c47a176e6f4c2af4e2/636e6e0761df291dff99e5db_ali-sons-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb54e44682bb6_ali-sons-transcode.mp4,https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb54e44682bb6_ali-sons-transcode.webm"
-                        data-autoplay="true" data-loop="true" data-wf-ignore="true" data-beta-bgvideo-upgrade="false" class="header7_background-video hide w-background-video w-background-video-atom"><video id="c2feddca-ec7a-880c-cef7-d7023b685376-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/636cf9c47a176e6f4c2af4e2/636e6e0761df291dff99e5db_ali-sons-poster-00001.jpg&quot;)" muted=""
-                            playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb54e44682bb6_ali-sons-transcode.mp4" data-wf-ignore="true"/><source src="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb54e44682bb6_ali-sons-transcode.webm" data-wf-ignore="true"/></video></div><img src="<?= base_url('assets/images/back-2000.jpg') ?>" 
+                    <div data-poster-url="<?= base_url('assets/images/background.jpg')?>" data-video-urls="#"
+                        data-autoplay="true" data-loop="true" data-wf-ignore="true" data-beta-bgvideo-upgrade="false" class="header7_background-video hide w-background-video w-background-video-atom"><video id="c2feddca-ec7a-880c-cef7-d7023b685376-video" autoplay="" loop="" style="background-image:url(#)" muted=""
+                            playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="#" data-wf-ignore="true"/><source src="#" data-wf-ignore="true"/></video></div><img src="<?= base_url('assets/images/back-2000.jpg') ?>" 
     loading="lazy" 
     sizes="100vw" 
     srcset="<?= base_url('assets/images/back-500.jpg') ?> 500w, 
@@ -213,7 +223,7 @@
                         alt="44 years of growth" class="header7_background-video" />
                     <div class="header7_list-wrapper w-dyn-list">
                         <div role="list" class="header7_collection-list w-dyn-items">
-                            <div role="listitem" class="header7_collection-item w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/676e3a6740752fde1890307d_ASH-Banner.png" alt="44 years of growth" class="header7_background-video" /></div>
+                            <div role="listitem" class="header7_collection-item w-dyn-item"><img loading="lazy" src="<?= base_url('assets/images/background.jpg')?>" alt="44 years of growth" class="header7_background-video" /></div>
                         </div>
                     </div>
                 </div>
@@ -274,16 +284,16 @@
                                     </div>
                                     <div class="facts_background-image-wrapper">
                                     <div class="silder-overlay-layer"></div>
-<img 
-    src="<?= base_url('assets/images/slide1.jpg') ?>" 
-    loading="lazy" 
-    sizes="100vw" 
-    srcset="<?= base_url('assets/images/slide1-500.jpg') ?> 500w, 
-            <?= base_url('assets/images/slide1-800.jpg') ?> 800w, 
-            <?= base_url('assets/images/slide1-1080.jpg') ?> 1080w, 
-            <?= base_url('assets/images/slide1-1120.jpg') ?> 1120w, 
-            <?= base_url('assets/images/slide1.jpg') ?> 2500w" 
-    alt="First Carousel Image" class="facts_background-image" /></div>
+                                        <img 
+                                            src="<?= base_url('assets/images/slide1.jpg') ?>" 
+                                            loading="lazy" 
+                                            sizes="100vw" 
+                                            srcset="<?= base_url('assets/images/slide1-500.jpg') ?> 500w, 
+                                                    <?= base_url('assets/images/slide1-800.jpg') ?> 800w, 
+                                                    <?= base_url('assets/images/slide1-1080.jpg') ?> 1080w, 
+                                                    <?= base_url('assets/images/slide1-1120.jpg') ?> 1120w, 
+                                                    <?= base_url('assets/images/slide1.jpg') ?> 2500w" 
+                                            alt="First Carousel Image" class="facts_background-image" /></div>
                                 </div>
                                 <div class="section_facts">
                                     <div class="padding-global">
@@ -298,17 +308,17 @@
                                     </div>
                                     <div class="facts_background-image-wrapper">
                                     <div class="silder-overlay-layer"></div>
-<img 
-    src="<?= base_url('assets/images/slide2.jpg') ?>" 
-    loading="lazy" 
-    sizes="100vw" 
-    srcset="<?= base_url('assets/images/slide2-500.jpg') ?> 500w, 
-            <?= base_url('assets/images/slide2-800.jpg') ?> 800w, 
-            <?= base_url('assets/images/slide2-1080.jpg') ?> 1080w, 
-            <?= base_url('assets/images/slide2-1600.jpg') ?> 1600w, 
-            <?= base_url('assets/images/slide2.jpg') ?> 2500w" 
-    alt="Carousel 2 Image" class="facts_background-image"
-/></div>
+                                        <img 
+                                            src="<?= base_url('assets/images/slide2.jpg') ?>" 
+                                            loading="lazy" 
+                                            sizes="100vw" 
+                                            srcset="<?= base_url('assets/images/slide2-500.jpg') ?> 500w, 
+                                                    <?= base_url('assets/images/slide2-800.jpg') ?> 800w, 
+                                                    <?= base_url('assets/images/slide2-1080.jpg') ?> 1080w, 
+                                                    <?= base_url('assets/images/slide2-1600.jpg') ?> 1600w, 
+                                                    <?= base_url('assets/images/slide2.jpg') ?> 2500w" 
+                                            alt="Carousel 2 Image" class="facts_background-image"
+                                        /></div>
                                 </div>
                                 <div class="section_facts">
                                     <div class="facts_subheading">Key Facts</div>
@@ -323,17 +333,17 @@
                                     </div>
                                     <div class="facts_background-image-wrapper">
                                     <div class="silder-overlay-layer"></div>
-<img 
-    src="<?= base_url('assets/images/slide3.jpg') ?>" 
-    loading="lazy" 
-    sizes="100vw" 
-    srcset="<?= base_url('assets/images/slide3-500.jpg') ?> 500w, 
-            <?= base_url('assets/images/slide3-800.jpg') ?> 800w, 
-            <?= base_url('assets/images/slide3-1080.jpg') ?> 1080w, 
-            <?= base_url('assets/images/slide3-1600.jpg') ?> 1600w, 
-            <?= base_url('assets/images/slide3.jpg') ?> 2500w" 
-    alt="Carousel 3 Images" class="facts_background-image"
-/></div>
+                                        <img 
+                                            src="<?= base_url('assets/images/slide3.jpg') ?>" 
+                                            loading="lazy" 
+                                            sizes="100vw" 
+                                            srcset="<?= base_url('assets/images/slide3-500.jpg') ?> 500w, 
+                                                    <?= base_url('assets/images/slide3-800.jpg') ?> 800w, 
+                                                    <?= base_url('assets/images/slide3-1080.jpg') ?> 1080w, 
+                                                    <?= base_url('assets/images/slide3-1600.jpg') ?> 1600w, 
+                                                    <?= base_url('assets/images/slide3.jpg') ?> 2500w" 
+                                            alt="Carousel 3 Images" class="facts_background-image"
+                                        /></div>
                                 </div>
                                 <div class="facts-sections-bullets">
                                     <div class="facts-sections-bullet child-1">
@@ -376,34 +386,37 @@
                                                 <?=base_url('assets/images/portfolio2-1120.jpg')?> 1120w" 
                                             class="vertical_image"
                                             />
-                                            <div class="vertical_overlay"></div><h3 class="vertical_heading">Automotive</h3><div style="background-image:url(&quot;https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e37e6dc0047c72307e7415_icon_auto.svg&quot;)" class="vertical_icon real-estate"></div></a>
-                                                                                    <a
-                                                                                        id="vertical_acc_2" href="#" class="verticals_accordion vertical_acc_2 w-inline-block"><img 
+                                            <div class="vertical_overlay"></div><h3 class="vertical_heading">Automotive</h3><div style="background-image: url('<?= base_url('assets/images/automotive.svg') ?>');" class="vertical_icon real-estate"></div></a>
+                                            <a id="vertical_acc_2" href="#" class="verticals_accordion vertical_acc_2 w-inline-block"><img 
                                             loading="lazy" 
                                             alt="Energy & Industrial" 
                                             src="<?= base_url('assets/images/portfolio1.jpg') ?>" 
                                             sizes="(max-width: 767px) 9vw, (max-width: 991px) 10vw, (max-width: 1439px) 9vw, 127px" 
                                             srcset="
-                                                assets/images/portfolio1-p-500.jpg 500w, 
-                                                assets/images/portfolio1-p-800.jpg 800w, 
-                                                assets/images/portfolio1-p-1080.jpg 1080w, 
+                                                assets/images/portfolio1-500.jpg 500w, 
+                                                assets/images/portfolio1-800.jpg 800w, 
+                                                assets/images/portfolio1-1080.jpg 1080w, 
                                                 assets/images/portfolio1.jpg 1120w" 
-                                            class="vertical_image" 
+                                            class="vertical_image" alt="Automative" class="vertical_image"
                                             />
 
                                             <div class="vertical_overlay"></div>
                                             <h3 class="vertical_heading">Energy &amp; Industrial</h3>
-                                            <div style="background-image:url(&quot;https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e381f94794efa9d0896b22_icon_energy.svg&quot;)" class="vertical_icon real-estate"></div>
-                                            </a><a id="vertical_acc_3" href="#" class="verticals_accordion vertical_acc_3 w-inline-block"><img loading="lazy" alt="Real Estate, Retail, Investment &amp; Others" src="<?= base_url('assets/images/portfolio3.jpg')?>" sizes="(max-width: 767px) 9vw, (max-width: 991px) 10vw, (max-width: 1439px) 9vw, 127px" srcset="https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e382134794ef87b6896ca2_slide-real-estate-p-500.jpeg 500w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e382134794ef87b6896ca2_slide-real-estate-p-800.jpeg 800w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e382134794ef87b6896ca2_slide-real-estate-p-1080.jpeg 1080w, https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e382134794ef87b6896ca2_slide-real-estate.jpeg 1120w" class="vertical_image"/><div class="vertical_overlay"></div><h3 class="vertical_heading">Real Estate, Retail, Investment &amp; Others</h3><div style="background-image:url(&quot;https://cdn.prod.website-files.com/63b6ad58a2acb53207682b15/63e382169daae77d1eb646ad_icon_RealEstate%20-%20Ico.svg&quot;)" class="vertical_icon real-estate"></div></a></div>
+                                            <div  style="background-image: url('<?= base_url('assets/images/flash.svg') ?>');" class="vertical_icon real-estate"></div>
+                                            </a><a id="vertical_acc_3" href="#" class="verticals_accordion vertical_acc_3 w-inline-block"><img loading="lazy" alt="Real Estate, Retail, Investment &amp; Others" src="<?= base_url('assets/images/portfolio3.jpg')?>" sizes="(max-width: 767px) 9vw, (max-width: 991px) 10vw, (max-width: 1439px) 9vw, 127px" srcset="<?=base_url('assets/images/portfolio3-500.jpg')?> 500w, 
+                                                <?=base_url('assets/images/portfolio3-800.jpg')?> 800w, 
+                                                <?=base_url('assets/images/portfolio3-1080.jpg')?> 1080w, 
+                                                <?=base_url('assets/images/portfolio3-1120.jpg')?> 1120w"  class="vertical_image"/><div class="vertical_overlay"></div><h3 class="vertical_heading">Real Estate, Retail, Investment &amp; Others</h3><div style="background-image:url('<?= base_url('assets/images/building.svg')?>')" class="vertical_icon real-estate"></div></a></div>
                                 </div>
                             </div>
-                            <div class="verticals_component delay-appear-from-bottom hide"><a href="#" class="verticals_accordion active hide w-inline-block"><img src="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb5eb79682bc6_vertical-automotive.jpg" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb5eb79682bc6_vertical-automotive-p-500.jpg 500w, https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb5eb79682bc6_vertical-automotive-p-800.jpg 800w, https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb5eb79682bc6_vertical-automotive-p-1080.jpg 1080w, https://cdn.prod.website-files.com/63b6ad58a2acb515e1682af0/63b6ad58a2acb5eb79682bc6_vertical-automotive.jpg 1120w" alt="Automotive" class="vertical_image"/><div class="vertical_overlay"></div><h3 class="vertical_heading">Automotive</h3><div class="vertical_icon automotive"></div></a>
+                            <div class="verticals_component delay-appear-from-bottom hide"><a href="#" class="verticals_accordion active hide w-inline-block"><img src="<?= base_url('assets/images/portfolio2.jpg')?>" loading="lazy" sizes="100vw" srcset="assets/images/portfolio2-500.jpg 500w, 
+                                assets/images/portfolio2-800.jpg 800w, 
+                                assets/images/portfolio2-1080.jpg 1080w, 
+                                assets/images/portfolio2.jpg 1120w" alt="Automotive" class="vertical_image"/><div class="vertical_overlay"></div><h3 class="vertical_heading">Automotive</h3><div class="vertical_icon automotive"></div></a>
                                 <a href="#" class="verticals_accordion hide w-inline-block"><img src="<?= base_url('assets/images/portfolio3.jpg') ?>" loading="lazy" sizes="100vw" srcset="assets/images/portfolio3-500.jpg 500w, 
                                 assets/images/portfolio3-800.jpg 800w, 
                                 assets/images/portfolio3-1080.jpg 1080w, 
-                                assets/images/portfolio3.jpg 1120w" alt="Real Estate, Retail, Investment & Others" class="vertical_image"/>
-<div class="vertical_overlay">
-                                    alt="Energy &amp; Industrial" class="vertical_image" />
+                                assets/images/portfolio3-1120.jpg 1120w"  alt="Energy &amp; Industrial" class="vertical_image" />
                                     <div class="vertical_overlay"></div>
                                     <h3 class="vertical_heading">Energy &amp; Industrial</h3>
                                     <div class="vertical_icon energy"></div></a>
@@ -411,14 +424,14 @@
                                 loading="lazy" 
                                 sizes="100vw" 
                                 srcset="
-                                assets/images/portfolio3-500.jpg 500w, 
-                                assets/images/portfolio3-800.jpg 800w, 
-                                assets/images/portfolio3-1080.jpg 1080w, 
-                                assets/images/portfolio3.jpg 1120w" alt="Real Estate, Retail, Investment & Others" class="vertical_image"/>
-<div class="vertical_overlay"></div>
-<h3 class="vertical_heading">Real Estate, Retail, Investment & Industrial</h3>
-<div class="vertical_icon real-estate"></div>
-</div></a></div>
+                                assets/images/portfolio1-500.jpg 500w, 
+                                assets/images/portfolio1-800.jpg 800w, 
+                                assets/images/portfolio1-1080.jpg 1080w, 
+                                assets/images/portfolio1.jpg 1120w" alt="Real Estate, Retail, Investment & Others" class="vertical_image"/>
+                                <div class="vertical_overlay"></div>
+                                <h3 class="vertical_heading">Real Estate, Retail, Investment & Industrial</h3>
+                                <div class="vertical_icon real-estate"></div>
+                                </div></a></div>
                         </div>
                     </div>
                 </div>
@@ -431,12 +444,12 @@
                                 <div class="cta_newsletter_content">
                                     <div class="max-width-large">
                                         <div class="margin-bottom margin-xsmall">
-                                            <h3 class="heading-style-h5">Sign up for the Ali &amp; Sons Newsletter...</h3>
+                                            <h3 class="heading-style-h5">Sign up for this website...</h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="cta_newsletter_form-block w-form">
-                                    <form id="wf-form-Newsletter-Form" name="wf-form-Newsletter-Form" data-name="Newsletter Form" action="https://gmail.us21.list-manage.com/subscribe/post?u=aed6a90ba7283fb7758322d38&amp;amp;id=086d2fad84&amp;amp;f_id=0069d8e1f0"
+                                    <form id="wf-form-Newsletter-Form" name="wf-form-Newsletter-Form" data-name="Newsletter Form" action="#"
                                         method="get" class="cta_newsletter_form" data-wf-page-id="63b7f29133958e8ae005cfdf" data-wf-element-id="d78f1b3b-2a9d-0d23-cfcc-8c76c6b04ece">
                                         <div class="signup-form-wrapper"><input class="cta_newsletter_form_input w-input" maxlength="256" name="EMAIL" data-name="EMAIL" placeholder="Enquiry Here For Anything" data-w-id="d78f1b3b-2a9d-0d23-cfcc-8c76c6b04ed0" type="email"
                                                 id="EMAIL" required="" /><input type="submit" data-wait="Please wait..." id="w-node-d78f1b3b-2a9d-0d23-cfcc-8c76c6b04ed1-c6b04ec3" data-w-id="d78f1b3b-2a9d-0d23-cfcc-8c76c6b04ed1" class="cta_newsletter_form_button w-button"
@@ -487,13 +500,13 @@
 
                                 <a href="#" target="_blank" class="footer_social-link w-inline-block">
                                     <div class="footer_social-icon w-embed">
-                                        <i class="fab fa-instagram"></i> <!-- Replace 'fa-linkedin' with any desired Font Awesome icon -->
+                                        <i class="fab fa-instagram"></i> 
                                     </div>
                                 </a>
 
                                 <a href="#" target="_blank" class="footer_social-link w-inline-block">
                                     <div class="footer_social-icon w-embed">
-                                        <i class="fab fa-x"></i> <!-- Replace 'fa-linkedin' with any desired Font Awesome icon -->
+                                        <i class="fab fa-x"></i> 
                                     </div>
                                 </a>
 
@@ -525,4 +538,4 @@
     <script src="<?=base_url('assets/js/script.js')?>"></script>
 </body>
 
-</ht>
+</html>

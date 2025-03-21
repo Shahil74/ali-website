@@ -1,0 +1,105 @@
+<?php return array (
+  'search' => 
+  array (
+    'Config/Services' => 
+    array (
+      'php' => 
+      array (
+        1 => 
+        array (
+          0 => 'C:\\xampp\\htdocs\\home\\app\\Config\\Services.php',
+          1 => 'C:\\xampp\\htdocs\\home\\system\\Config\\Services.php',
+        ),
+      ),
+    ),
+    'Config/Registrar.php' => 
+    array (
+      'php' => 
+      array (
+        1 => 
+        array (
+        ),
+      ),
+    ),
+    'Helpers/kint_helper' => 
+    array (
+      'php' => 
+      array (
+        1 => 
+        array (
+          0 => 'C:\\xampp\\htdocs\\home\\system\\Helpers\\kint_helper.php',
+        ),
+      ),
+    ),
+    'Helpers/url_helper' => 
+    array (
+      'php' => 
+      array (
+        1 => 
+        array (
+          0 => 'C:\\xampp\\htdocs\\home\\system\\Helpers\\url_helper.php',
+        ),
+      ),
+    ),
+    'Config/Events.php' => 
+    array (
+      'php' => 
+      array (
+        1 => 
+        array (
+          0 => 'C:\\xampp\\htdocs\\home\\app\\Config\\Events.php',
+        ),
+      ),
+    ),
+    'Config/Filters.php' => 
+    array (
+      'php' => 
+      array (
+        1 => 
+        array (
+          0 => 'C:\\xampp\\htdocs\\home\\app\\Config\\Filters.php',
+          1 => 'C:\\xampp\\htdocs\\home\\system\\Config\\Filters.php',
+        ),
+      ),
+    ),
+    'Helpers/array_helper' => 
+    array (
+      'php' => 
+      array (
+        1 => 
+        array (
+          0 => 'C:\\xampp\\htdocs\\home\\system\\Helpers\\array_helper.php',
+        ),
+      ),
+    ),
+    'Config/Routes.php' => 
+    array (
+      'php' => 
+      array (
+        1 => 
+        array (
+          0 => 'C:\\xampp\\htdocs\\home\\app\\Config\\Routes.php',
+        ),
+      ),
+    ),
+    'Language/en/HTTP.php' => 
+    array (
+      'php' => 
+      array (
+        0 => 
+        array (
+          0 => 'C:\\xampp\\htdocs\\home\\system\\Language\\en\\HTTP.php',
+        ),
+      ),
+    ),
+  ),
+  'findQualifiedNameFromPath' => 
+  array (
+    'C:\\xampp\\htdocs\\home\\app\\Config\\Services.php' => 'Config\\Services',
+  ),
+  'getClassname' => 
+  array (
+    'C:\\xampp\\htdocs\\home\\app\\Config\\Filters.php' => 'Config\\Filters',
+    'C:\\xampp\\htdocs\\home\\system\\Config\\Filters.php' => 'CodeIgniter\\Config\\Filters',
+  ),
+);
